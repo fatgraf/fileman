@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>file-manager</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,600">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="bg-gradient">
+            <nav class="navbar navbar-light navbar-expand-md">
+                <div class="container-fluid"><a class="btn text-white" role="button" href="index.html"><i class="fa fa-arrow-left" href="index.htm"></i></a>
+                    <h6 id="header" class="mr-4">Recent Add</h6>
+<div class="btn-group dropleft">
+    <button type="button"  class="btn text-white fa fa-ellipsis-v " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    </button>
+    <div class="dropdown-menu option">
+        <a class="dropdown-item" href="pilih-item.html">Pilih item</a>
+        <a class="dropdown-item" href="#">Buat Folder</a>
+        <a class="dropdown-item" href="#">Bagikan</a>
+        <a class="dropdown-item" href="#">Urutkan</a>
+    </div>
+</div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <div class="container">    <div class="card-group recent">
+        <a href="" data-toggle="modal" data-target="#ViewModal" class="card card-thumb-first">
+                <div class="card-body category">
+                    <img class="thumb-file" src="assets/img/1.jpg" />
+                </div>
+        </a>
+
+        <a href="" data-toggle="modal" data-target="#ViewModal" class="card card-thumb">
+                <div class="card-body category">
+                    <img class="thumb-file" src="assets/img/2.jpg"/>
+                </div>
+        </a>
+
+        <a href="" data-toggle="modal" data-target="#ViewModal" class="card card-thumb"> 
+                <div class="card-body category">
+                    <img class="thumb-file" src="assets/img/3.jpg" />
+                </div>
+        </a>
+
+        <a href="" data-toggle="modal" data-target="#ViewModal" class="card card-thumb-last">
+                <div class="card-body category">
+                    <img class="thumb-file" src="assets/img/4.jpg"/>
+                </div>
+        </a>
+    </div></div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-add">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title"><br>Upload File Atau Buat Folder Baru<br><br></h6><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                    <div class="col-6" style="text-align: center;"><button class="btn border rounded-circle btn-add" type="button"><img id="add-icon" src="assets/img/folder.svg"></button>
+                        <p>Folder Baru</p>
+                    </div>
+                    <div class="col-6" style="text-align: center;"><button class="btn border rounded-circle btn-add" type="button"><img id="add-icon" src="assets/img/upload-sign-svgrepo-com.svg"></button>
+                        <p>Upload File</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="add"><button class="btn add-btn" type="button"><img src="assets/img/button(1).svg" style="width: 48px;"></button></div>
+    <div class="nav-bottom fixed-bottom"><a class="pulse animated nav-bottom-icon" href="index.html" style="color: var(--gray);"><img id="icon-order-bottom-1" class="nav-bottom-icon" src="assets/img/home.svg">
+            <p class="title-nav" style="color: rgb(108, 117, 125);">Beranda</p>
+        </a><a class="pulse animated nav-bottom-icon" href="favorite.html"><img id="icon-order-bottom-3" class="nav-bottom-icon" src="assets/img/favorites.svg">
+            <p class="title-nav">Favorite</p>
+        </a><a id="share" class="nav-bottom-icon" href="recent-add.html"><img id="icon-cart-bottom-2" class="nav-bottom-icon" src="assets/img/recent.svg">
+            <p class="title-nav">Terbaru</p>
+        </a><a class="nav-bottom-icon" href="order.html"><img id="icon-profile-bottom" class="nav-bottom-icon" src="assets/img/folder.svg">
+            <p class="title-nav">Browse</p>
+        </a></div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="ViewImageModal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content"><div class="modal-body view">   
+    <div class="btn-group dropleft top-right">
+        <button type="button"  class="btn text-white fa fa-ellipsis-v " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        </button>
+        <div class="dropdown-menu option">
+            <a class="dropdown-item" href="#">Rincian</a>
+            <a class="dropdown-item" href="#">Ubah Nama</a>
+            <a class="dropdown-item" href="#">Edit</a>
+            <a class="dropdown-item" href="#">Salin</a>
+            <a class="dropdown-item" href="#">Pindahkan</a>
+            <a class="dropdown-item" href="#">Hapus</a>
+        </div>
+    </div>
+    </div>
+    <img src="assets/img/1.svg" />
+</div></div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

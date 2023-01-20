@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>file-manager</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,600">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <section><img src="assets/img/bg.svg"></section>
+    <section class="login-form">
+        <div class="container">
+            <p class="text-left phone mt-3">Masukkan Nomor Telepon Anda</p>
+            <div class="form-group"><input type="text" class="form-control border-grafur" placeholder="081234567890"></div>
+            <p class="text-center">Pilih Salah Satu Metode dibawah ini untuk mendapatkan kode verifikasi</p>
+            <div class="d-flex">
+                <div class="col-6"><button class="btn border-grafur w-100 text-grafur-normal btn-otp " id="sms"  data-toggle="modal" data-target="#modal-verification" type="button"><i class="fas fa-envelope"></i><span class="ml-2">OTP SMS</span></button></div>
+                <div class="col-6"><button class="btn btn-otp border-grafur text-grafur-normal" id="whatsapp"  data-toggle="modal" data-target="#modal-verification" type="button"><i class="fab fa-whatsapp"></i><span class="ml-2">WHATSAPP</span></button></div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-verification">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6>Verifikasi</h6><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body otp-body">
+                        <p class="text-center"><a href="#"><img src="assets/img/others.svg" style="height: 50px;"></a></p>
+                        <p style="text-align: center;">Silakan masukkan OTP yang kami kirimkan<br>ke +6281*******0</p>
+                        <div class="row px-3 py-4 justify-content-center d-flex"><input type="text" class="input-otp form-control"><input type="text" class="input-otp form-control"><input type="text" class="input-otp form-control"><input type="text" class="input-otp form-control"></div>
+                        <p class="mb-2 text-grafur-normal mb-3" style="text-align: center;"><a class="text-grafur-normal" href="#">Belum Terima Kode OTP?</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <form class="mt-2 w-100"><a class="btn w-100 bg-gradient text-white" role="button" href="index.html">Verifikasi</a></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

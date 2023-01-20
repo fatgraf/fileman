@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>file-manager</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,600">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-light">
+    <section><aside class="offcanvas" id="sidebar_left">
+	<div class="card-body bg-gradient">
+		<button class="btn-close close text-white">×</button>
+		<img src="assets/img/user.jpg" class="img-sm rounded-circle" alt="">
+		<h6 class="text-white mt-3 mb-0">Soimah</h6>
+	</div>
+	<nav class="nav-sidebar">
+		<a href="index.html"> <i class="fa fa-home"></i> Home</a>
+		<a href="recent-add.html"> <i class="fa fa-th"></i> Recent Add</a>
+		<a href=""> <i class="fa fa-info-circle"></i> Recent Order</a>
+		<a href="login.html"> <i class="fa fa-sign-out"></i> Log Out</a>
+	</nav>
+	<hr>
+	<nav class="nav-sidebar">
+		<a href="#"> <i class="fa fa-whatsapp"></i> +62 8158 663 2007</a>
+		<a href="#"> <i class="fa fa-envelope"></i> print@grafurprint.com</a>
+		<a href="#"> <i class="fa fa-map-marker"></i> Jakarta - Indonesia</a>
+	</nav>
+</aside>
+
+<!-- =============== screen-wrap =============== -->
+<header class="app-header bg-white">
+    <button class="btn-header" type="button" data-trigger="#sidebar_left"><i class="fa fa-bars"></i></button>
+	    <div class="greeting-user">
+	    <p class="greeting">Selamat Siang,</p>
+	    <h6 class="username">Soimah Sharapova</h6>
+		</div>
+    <img src="assets/img/user.jpg" class="top-right img-sm rounded-circle" alt="">
+    </a>
+ </header> 
+
+
+</section>
+    <section class="search-bar">
+        <div class="container">
+            <div class="form-group input-search d-flex"><i class="fa fa-search"></i><input class="shadow-none text-input" type="text" placeholder="Search File"></div>
+        </div>
+    </section>
+    <section class="section-drive">
+        <div class="container drive">
+            <div class="card-group">
+                <div class="card" id="card-drive">
+                    <div class="card-body"><i class="fa fa-paper-plane" id="icon-storage"></i><span><i class="fas fa-ellipsis-v"></i></span>
+                        <p id="title-card">Grafur Print</p>
+                        <p id="capacity">3.8 GB / 4 GB</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><section class="section-category">
+    <div class="container category">
+        <div class="card-group category">
+            <a href="image.html" class="card card-thumb-first">	
+	                <div class="card-body category"><img class="thumb-category" src="assets/img/image.svg" /></div>
+	                <p class="category-title">Image</p>
+            </a>
+
+            <a href="document.html" class="card card-thumb">
+	                <div class="card-body category"><img class="thumb-category" src="assets/img/document.svg" /></div>
+	                <p class="category-title">Document</p>
+            </a>
+
+            <a href="zip.html" class="card card-thumb-last">
+	                <div class="card-body category"><img class="thumb-category" src="assets/img/zip-1.svg" /></div>
+	                <p class="category-title">Zip File</p>
+            </a>
+
+        </div>
+    </div>
+</section>
+    <section class="shadow-sm section-recent-add justify-content-center"><div class="container">
+    <div class="section-heading">
+        <span>Recent Add</span>
+        <a href="recent-add.html" class="view-more btn bg-grafur btn-sm" role="button" aria-pressed="true">Lihat Semua</a>
+    </div>
+    <div class="card-group recent">
+        <a href="recent-add.html"class="card card-thumb-first">
+                <div class="card-body category">
+                    <img class="thumb-file" src="assets/img/1.jpg" />
+                </div>
+        </a>
+
+        <a href="recent-add.html" class="card card-thumb">
+                <div class="card-body category">
+                    <img class="thumb-file" src="assets/img/2.jpg" />
+                </div>
+        </a>
+
+        <a href="" class="card card-thumb"> 
+                <div class="card-body category">
+                    <img class="thumb-file" src="assets/img/3.jpg" />
+                </div>
+        </a>
+        <a href="" class="card card-thumb-last">
+                <div class="card-body category">
+                    <img class="thumb-file" src="assets/img/4.jpg" />
+                </div>
+        </a>
+    </div>
+</div></section>
+    <section class="shadow-sm section-recent-add justify-content-center"><div class="container">
+    <div class="section-heading-order">
+        <span>Recent Order</span>
+        <a href="order.html" class="view-more btn bg-grafur btn-sm" role="button" aria-pressed="true">Lihat Semua</a>
+    </div>
+    <div class="card-group order">
+        <a href="upload-file.html"class="card card-thumb-first">
+                <div class="card-body category"><img class="thumb-folder" src="assets/img/folder%20(1).svg" /></div>
+                <p class="order-number">210201010</p>
+        </a>
+
+        <a href="upload-file.html"class="card card-thumb">
+                <div class="card-body category"><img class="thumb-folder" src="assets/img/folder%20(1).svg" /></div>
+                <p class="order-number">210201010</p>
+        </a>
+
+        <a href="upload-file.html"class="card card-thumb">
+                <div class="card-body category"><img class="thumb-folder" src="assets/img/folder%20(1).svg" /></div>
+                <p class="order-number">210201010</p>
+        </a>
+
+        <a href="upload-file.html"class="card card-thumb-last">
+                <div class="card-body category"><img class="thumb-folder" src="assets/img/folder%20(1).svg" /></div>
+                <p class="order-number">210201010</p>
+        </a>
+    </div>
+</div></section>
+    <div class="nav-bottom fixed-bottom"><a class="pulse animated nav-bottom-icon" href="index.html" style="color: var(--gray);"><img id="icon-order-bottom-1" class="nav-bottom-icon" src="assets/img/home.svg">
+            <p class="title-nav">Beranda</p>
+        </a><a class="pulse animated nav-bottom-icon" href="favorite.html"><img id="icon-order-bottom-3" class="nav-bottom-icon" src="assets/img/favorites.svg">
+            <p class="title-nav">Favorite</p>
+        </a><a class="nav-bottom-icon" href="recent-add.html"><img id="icon-cart-bottom-2" class="nav-bottom-icon" src="assets/img/clock.svg">
+            <p class="title-nav">Terbaru</p>
+        </a><a class="nav-bottom-icon" href="order.html"><img id="icon-profile-bottom" class="nav-bottom-icon" src="assets/img/folder.svg">
+            <p class="title-nav">Browse</p>
+        </a></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

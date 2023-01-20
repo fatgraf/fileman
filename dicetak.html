@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>file-manager</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,600">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="bg-gradient">
+            <nav class="navbar navbar-light navbar-expand-md">
+                <div class="container-fluid"><a class="btn text-white" role="button" href="order.html"><i class="fa fa-arrow-left"></i></a>
+                    <h6 id="header" class="mr-4">Pesanan Dicetak</h6><button class="btn text-white" type="button"><i class="fa fa-ellipsis-v"></i></button>
+                </div>
+            </nav>
+        </div>
+    </section><div class="p-3 status-order bg-white border-bottom d-flex align-items-center">
+<p class="m-0"><i class="fas fa-calendar-alt"></i> 16 June, 11:30AM</p>
+</div>
+<div class="p-3 border-bottom">
+	<h6 class="font-weight-bold">Order Status</h6>
+		<div class="tracking-wrap">
+			<div class="my-1 step active">
+				<span class="icon text-info"><i class="fas fa-check"></i></span>
+				<span class="text small">Pesanan Dibuat</span>
+			</div>
+
+			<div class="my-1 step active">
+				<span class="icon text-info"><i class="fas fa-check"></i></span>
+				<span class="text small"> Upload File</span>
+			</div> 
+			    
+			<div class="my-1 step active">
+				<span class="icon text-info"><i class="fas fa-check"></i></span>
+				<span class="text small"> Pesanan diproses</span>
+			</div>
+
+			<div class="my-1 step active">
+				<span class="icon text-info"><i class="fas fa-check"></i></span>
+				<span class="text small"> Preview </span>
+			</div>
+
+			<div class="my-1 step">
+				<span class="icon text-muted"><i class="fas fa-check"></i></span>
+				<span class="text small">Delivered Order</span>
+			</div>
+		</div>
+</div>
+
+
+    <div class="p-3 border-bottom">
+        <h6 class="font-weight-bold">File Preview</h6><div class="container">
+    <div class="card-group recent">
+        <a href="" data-toggle="modal" data-target="#ViewModal" class="card card-thumb-first">
+            <div class="card card-thumb-first">
+                <div class="card-body category"><img class="thumb-file" src="assets/img/pdf.svg" /></div>
+                <p class="file-name">abcde.jpg</p>
+            </div>
+        </a>
+        <a href="" data-toggle="modal" data-target="#ViewModal" class="card card-thumb">
+            <div class="card card-thumb">
+                <div class="card-body category"><img class="thumb-file" src="assets/img/pdf.svg" /></div>
+                <p class="file-name">fghij.png<br /><br /></p>
+            </div>
+        </a>
+        <a href="" data-toggle="modal" data-target="#ViewModal" class="card card-thumb"> 
+            <div class="card card-thumb">
+                <div class="card-body category"><img class="thumb-file" src="assets/img/pdf.svg" /></div>
+                <p class="file-name">klmno.psd<br /><br /></p>
+            </div>
+        </a>
+        <a href="" data-toggle="modal" data-target="#ViewModal" class="card card-thumb">
+            <div class="card card-thumb-last">
+                <div class="card-body category"><img class="thumb-file" src="assets/img/pdf.svg" /></div>
+                <p class="file-name">pqrst.ai<br /><br /></p>
+            </div>
+        </a>
+    </div>
+</div>
+    </div>
+    <div class="nav-bottom fixed-bottom">
+        <div class="container d-flex">
+            <div class="d-flex justify-content-center align-items-center col-4"><button class="btn btn-sm border rounded border-secondary btn-proofing btn-bottom" type="submit">Proofing</button></div>
+            <div class="d-flex justify-content-center align-items-center col-8"><a class="btn btn-print bg-grafur btn-bottom" role="button">&nbsp;Cetak Sekarang</a></div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-add">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"><br>Upload File Atau Buat Folder Baru<br><br></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                    <div class="col-6" style="text-align: center;"><button class="btn border rounded-circle btn-add" type="button"><img id="add-icon" src="assets/img/folder.svg"></button>
+                        <p>Folder Baru</p>
+                    </div>
+                    <div class="col-6" style="text-align: center;"><input class="border rounded-circle" type="file" id="upload" hidden/>
+<label for="upload"><img id="add-icon" src="assets/img/upload-sign-svgrepo-com.svg"/></label>
+                        <p>Upload File</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="ViewModal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content"><div class="modal-body view">   
+    <img src="assets/img/pdf.svg" />
+</div></div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-print">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Cetak Sekarang</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>Apakah anda sudah yakin untuk Lanjut proses cetak sekarang juga?</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Tidak</button><button class="btn btn-primary" type="button">Ya, Cetak</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
